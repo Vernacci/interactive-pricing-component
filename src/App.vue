@@ -1,9 +1,9 @@
 <script setup>
-import Pricing from './components/Pricing.vue';
+import Header from './components/Header.vue';
 </script>
 
 <template>
-  <Pricing />
+  <Header />
 </template>
 
 <style>
