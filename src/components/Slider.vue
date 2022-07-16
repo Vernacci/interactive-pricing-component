@@ -1,25 +1,28 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const price = ref(16);
+
+const views = ref(100);
 </script>
 
 <template>
   <main class="container">
     <div class="content">
-      <span class="views">100K PAGEVIEWS</span>
+      <span class="views">{{ views }}K PAGEVIEWS</span>
       <span pricing-container>
         <span class="price">${{ price }}.00</span>
         <span class="month">/month</span>
       </span>
       <div class="slider-container">
         <input
+          v-model="price"
           type="range"
           name="price-slider"
           class="slider"
-          v-model="price"
           min="8"
           max="36"
+          step="4"
         />
       </div>
     </div>
