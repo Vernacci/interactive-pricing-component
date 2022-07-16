@@ -43,12 +43,17 @@ const views = ref(100);
   padding: 30px;
   border-radius: 5px;
   margin-top: 100px;
+  min-width: 400px;
 }
 
 .slider-container {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.slider {
+  width: 300px;
 }
 
 .views {
