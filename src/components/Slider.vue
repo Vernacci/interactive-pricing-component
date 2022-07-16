@@ -53,9 +53,17 @@ const price = ref(16);
 
 .views {
   margin-right: 80px;
+  color: var(--gray-blue);
+  letter-spacing: 1.5px;
+}
+
+.month {
+  color: var(--gray-blue);
 }
 
 .price {
   font-size: 2.2rem;
+  color: var(--dark-blue);
+  font-weight: 800;
 }
 </style>
