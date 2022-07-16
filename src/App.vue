@@ -19,4 +19,8 @@ import Slider from './components/Slider.vue';
   background-color: var(--bg-white);
   font-family: 'Manrope', sans-serif;
 }
+
+body {
+  background-color: var(--bg-white);
+}
 </style>
