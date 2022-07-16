@@ -7,7 +7,7 @@ const price = ref(16);
 <template>
   <main class="container">
     <div class="content">
-      <span class="views">100K pageviews</span>
+      <span class="views">100K PAGEVIEWS</span>
       <span pricing-container>
         <span class="price">${{ price }}.00</span>
         <span class="month">/month</span>
@@ -18,6 +18,8 @@ const price = ref(16);
           name="price-slider"
           class="slider"
           v-model="price"
+          min="8"
+          max="36"
         />
       </div>
     </div>
@@ -46,15 +48,11 @@ const price = ref(16);
   margin-top: 50px;
 }
 
-.slider {
-  width: 350px;
-  padding: 10px;
-}
-
 .views {
   margin-right: 80px;
   color: var(--gray-blue);
-  letter-spacing: 1.5px;
+  letter-spacing: 1.9px;
+  font-size: 12px;
 }
 
 .month {
