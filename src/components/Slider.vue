@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 
 const price = ref(16);
 
@@ -10,7 +10,7 @@ const views = ref(100);
   <main class="container">
     <div class="content">
       <span class="views">{{ views }}K PAGEVIEWS</span>
-      <span pricing-container>
+      <span class="pricing-container">
         <span class="price">${{ price }}.00</span>
         <span class="month">/month</span>
       </span>
@@ -60,7 +60,7 @@ const views = ref(100);
   margin-right: 80px;
   color: var(--gray-blue);
   letter-spacing: 1.9px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .month {
@@ -68,7 +68,7 @@ const views = ref(100);
 }
 
 .price {
-  font-size: 2.2rem;
+  font-size: 36px;
   color: var(--dark-blue);
   font-weight: 800;
 }

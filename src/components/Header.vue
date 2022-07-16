@@ -1,18 +1,21 @@
 <script setup>
-import { ref } from 'vue';
+import Slider from './Slider.vue';
 </script>
 
 <template>
-  <header>
-    <h1 class="title">Simple trafic-based pricing</h1>
-    <p class="sub-title">
-      Sign-up for our 30-day trial. No credit card required.
-    </p>
+  <header class="header-container">
+    <div class="header-content">
+      <h1 class="title">Simple trafic-based pricing</h1>
+      <p class="sub-title">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </div>
   </header>
+  <Slider />
 </template>
 
 <style>
-header {
+.header-content {
   text-align: center;
   margin-top: 30px;
   color: var(--dark-blue);
@@ -22,7 +25,7 @@ header {
 }
 
 .sub-title {
-  font-size: 0.9375rem;
+  font-size: 15px;
   color: var(--gray-blue);
 }
 </style>
