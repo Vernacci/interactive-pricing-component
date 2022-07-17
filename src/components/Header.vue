@@ -1,6 +1,4 @@
-<script setup>
-import Slider from './Slider.vue';
-</script>
+<script setup></script>
 
 <template>
   <header class="header-container">
@@ -11,7 +9,6 @@ import Slider from './Slider.vue';
       </p>
     </div>
   </header>
-  <Slider />
 </template>
 
 <style>
