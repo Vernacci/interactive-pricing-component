@@ -1,9 +1,11 @@
 .toggle-container {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 30px;
+  border-bottom: 1px solid var(--gray-blue);
 }
 
 .switch {

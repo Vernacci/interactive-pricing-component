@@ -74,7 +74,7 @@ watch(price, (newPrice) => {
   background-color: white;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.116);
   padding: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 100px;
   min-width: 400px;
 }
