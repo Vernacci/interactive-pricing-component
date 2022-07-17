@@ -22,5 +22,6 @@ import Slider from './components/Slider.vue';
 body {
   background: url('../src/images/bg-pattern.svg') no-repeat;
   background-size: 2400px 450px;
+  background-color: var(--bg-white);
 }
 </style>
