@@ -4,8 +4,10 @@ import Slider from './components/Slider.vue';
 </script>
 
 <template>
-  <Header />
-  <Slider />
+  <div class="app-container">
+    <Header />
+    <Slider />
+  </div>
 </template>
 
 <style>
@@ -16,11 +18,11 @@ import Slider from './components/Slider.vue';
 }
 
 #app {
-  background-color: var(--bg-white);
   font-family: 'Manrope', sans-serif;
 }
 
 body {
-  background-color: var(--bg-white);
+  background: url('../src/images/bg-pattern.svg') no-repeat;
+  background-size: 2400px 450px;
 }
 </style>
