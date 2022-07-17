@@ -1,4 +1,6 @@
 <script setup>
+import Toggle from './Toggle.vue';
+
 import { ref, watch } from 'vue';
 
 const price = ref(16);
@@ -20,11 +22,12 @@ watch(price, (newPrice) => {
 <template>
   <main class="container">
     <div class="content">
-      <span class="views">{{ views }} PAGEVIEWS</span>
-      <span class="pricing-container">
+      <div class="pricing">
+        <span class="views">{{ views }} PAGEVIEWS</span>
         <span class="price">${{ price }}.00</span>
         <span class="month">/month</span>
-      </span>
+      </div>
+
       <div class="slider-container">
         <input
           v-model="price"
@@ -36,6 +39,7 @@ watch(price, (newPrice) => {
           step="4"
         />
       </div>
+      <Toggle />
     </div>
   </main>
 </template>
@@ -46,12 +50,13 @@ watch(price, (newPrice) => {
   justify-content: center;
   align-items: center;
   height: 200px;
+  margin-top: 90px;
 }
 
 .content {
   background-color: white;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.116);
-  padding: 30px;
+  padding: 40px;
   border-radius: 5px;
   margin-top: 100px;
   min-width: 400px;
@@ -64,7 +69,7 @@ watch(price, (newPrice) => {
 }
 
 .slider {
-  width: 300px;
+  width: 500px;
 }
 
 .views {
@@ -82,5 +87,9 @@ watch(price, (newPrice) => {
   font-size: 36px;
   color: var(--dark-blue);
   font-weight: 800;
+}
+
+.pricing {
+  text-align: center;
 }
 </style>
