@@ -1,15 +1,26 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const price = ref(16);
 
-const views = ref(100);
+const views = ref('100K');
+
+watch(price, (newPrice) => {
+  if (newPrice == 8) views.value = '10K';
+  if (newPrice == 12) views.value = '50K';
+  if (newPrice == 16) views.value = '100K';
+  if (newPrice == 20) views.value = '200k';
+  if (newPrice == 24) views.value = '500K';
+  if (newPrice == 28) views.value = '600K';
+  if (newPrice == 32) views.value = '700K';
+  if (newPrice == 36) views.value = '1M';
+});
 </script>
 
 <template>
   <main class="container">
     <div class="content">
-      <span class="views">{{ views }}K PAGEVIEWS</span>
+      <span class="views">{{ views }} PAGEVIEWS</span>
       <span class="pricing-container">
         <span class="price">${{ price }}.00</span>
         <span class="month">/month</span>
