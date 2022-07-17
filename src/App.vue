@@ -4,10 +4,8 @@ import Slider from './components/Slider.vue';
 </script>
 
 <template>
-  <div class="app-container">
-    <Header />
-    <Slider />
-  </div>
+  <Header />
+  <Slider />
 </template>
 
 <style>
