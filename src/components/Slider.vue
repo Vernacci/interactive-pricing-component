@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue';
+import Details from './Details.vue';
 
 const price = ref(16);
 
@@ -9,7 +10,11 @@ const addDiscount = ref(false);
 
 const handleClick = () => {
   addDiscount.value = !addDiscount.value;
-  console.log(addDiscount.value);
+  if (addDiscount.value) {
+    price.value = price.value * 0.25;
+  } else {
+    price.value = price.value / 0.25;
+  }
 };
 
 watch(price, (newPrice) => {
@@ -55,38 +60,37 @@ watch(price, (newPrice) => {
         <span class="billing">Yearly billing</span>
         <span class="discount">25% discount</span>
       </div>
+      <Details />
     </div>
   </main>
 </template>
 
 <style>
 @import url('../css/toggle.css');
+@import url('../css/slider.css');
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin-top: 90px;
+  margin-top: 130px;
 }
 
 .content {
   background-color: white;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.116);
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
-  margin-top: 100px;
-  min-width: 400px;
+
+  width: 600px;
+  height: 400px;
 }
 
 .slider-container {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-}
-
-.slider {
-  width: 500px;
 }
 
 .views {
@@ -108,5 +112,32 @@ watch(price, (newPrice) => {
 
 .pricing {
   text-align: center;
+}
+
+.billing {
+  color: var(--gray-blue);
+  font-size: 15px;
+}
+
+.discount {
+  background-color: var(--gray-red);
+  color: var(--light-red);
+  padding: 6px;
+  border-radius: 50px;
+}
+
+@media (max-width: 650px) {
+  .content {
+    margin-top: 250px;
+    height: 600px;
+  }
+
+  .discount {
+    font-size: 12px;
+  }
+
+  .billing {
+    font-size: 12px;
+  }
 }
 </style>
