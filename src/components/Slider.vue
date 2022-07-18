@@ -150,9 +150,4 @@ watch(price, (newPrice) => {
     font-size: 12px;
   }
 }
-
-@media (max-width: 450px) {
-  .content {
-  }
-}
 </style>
