@@ -10,9 +10,19 @@ import Slider from './components/Slider.vue';
 
 <style>
 :root {
-  --dark-blue: hsl(227, 35%, 25%);
-  --gray-blue: hsl(225, 20%, 60%);
+  /* Primary  */
+  --soft-cyan: hsl(174, 77%, 80%);
+  --strong-cyan: hsl(174, 86%, 45%);
+  --gray-red: hsl(14, 92%, 95%);
+  --light-red: hsl(15, 100%, 70%);
+  --pale-blue: hsl(226, 100%, 87%);
+
+  /* Neutral */
   --bg-white: hsl(230, 100%, 99%);
+  --light-gray-blue: hsl(224, 65%, 95%);
+  --lg-blue: hsl(223, 50%, 87%);
+  --gray-blue: hsl(225, 20%, 60%);
+  --dark-blue: hsl(227, 35%, 25%);
 }
 
 #app {
