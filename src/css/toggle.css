@@ -1,11 +1,11 @@
 .toggle-container {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 30px;
-  border-bottom: 1px solid var(--gray-blue);
+  padding: 40px;
+  border-bottom: 1px solid var(--lg-blue);
 }
 
 .switch {
@@ -28,10 +28,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--light-gray-blue);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 60px;
+}
+
+.toggle:hover {
+  background-color: var(--soft-cyan);
 }
 
 .toggle:before {
@@ -47,11 +51,11 @@
 }
 
 input:checked + .toggle {
-  background-color: #2196f3;
+  background-color: var(--strong-cyan);
 }
 
 input:focus + .toggle {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px var(--strong-cyan);
 }
 
 input:checked + .toggle:before {
