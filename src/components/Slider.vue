@@ -130,14 +130,29 @@ watch(price, (newPrice) => {
   .content {
     margin-top: 250px;
     height: 600px;
+    width: 400px;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+
+  .views {
+    font-size: 12px;
   }
 
   .discount {
     font-size: 12px;
+    border-radius: 15px;
   }
 
   .billing {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
   }
 }
 </style>

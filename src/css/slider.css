@@ -12,6 +12,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .slider {
+    width: 300px;
+  }
+}
+
 .slider::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   color: var(--soft-cyan);
