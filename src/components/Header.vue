@@ -14,7 +14,8 @@
 <style>
 .header-content {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
+
   color: var(--dark-blue);
   background-color: var(--bg-white);
   background: url('../images/pattern-circles.svg') no-repeat center;
