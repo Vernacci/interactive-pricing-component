@@ -61,6 +61,7 @@ watch(price, (newPrice) => {
         <span class="discount">25% discount</span>
       </div>
       <Details />
+      <h1>test</h1>
     </div>
   </main>
 </template>
